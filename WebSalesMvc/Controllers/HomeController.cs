@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using WebSalesMvc.Models.ViewModels;
+using WebSalesMvc.Models;
 
 namespace WebSalesMvc.Controllers {
     public class HomeController : Controller {
