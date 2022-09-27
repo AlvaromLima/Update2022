@@ -20,5 +20,13 @@ namespace WebSalesMvc.Services
         {
             return _context.Seller.ToList();
         }
+
+        public void Insert(Seller obj)
+        {
+            //adiciona o objeto seller 
+            _context.Add(obj);
+            //grava no bd
+            _context.SaveChanges();
+        }
     }
 }
