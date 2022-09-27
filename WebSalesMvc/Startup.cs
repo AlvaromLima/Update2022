@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using WebSalesMvc.Data;
+using WebSalesMvc.Services;
 
 namespace WebSalesMvc {
     public class Startup 
@@ -39,6 +40,7 @@ namespace WebSalesMvc {
                     builder.MigrationsAssembly("WebSalesMvc")));
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
 
         }
 
