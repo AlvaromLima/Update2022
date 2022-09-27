@@ -8,15 +8,18 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebSalesMvc {
-    public class Program {
-        public static void Main(string[] args) {
+namespace WebSalesMvc
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
             CreateWebHostBuilder(args).Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
-        
+
     }
 }
