@@ -10,7 +10,7 @@ namespace WebSalesMvc.Services
     public class SellerService
     {
         private readonly WebSalesMvcContext _context;
-
+        
         public SellerService(WebSalesMvcContext context)
         {
             _context = context;
@@ -23,8 +23,6 @@ namespace WebSalesMvc.Services
 
         public void Insert(Seller obj)
         {
-            //Pega o primeiro departamento da tabela department do bd.
-            obj.Department = _context.Department.First();
             //adiciona o objeto seller 
             _context.Add(obj);
             //grava no bd
